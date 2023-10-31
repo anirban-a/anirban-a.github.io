@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "anirban-acharya-portfolio": {
+    "profileApp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/anirban-acharya-portfolio",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "anirban-acharya-portfolio:build:production"
+              "browserTarget": "profileApp:build:production"
             },
             "development": {
-              "browserTarget": "anirban-acharya-portfolio:build:development"
+              "browserTarget": "profileApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "anirban-acharya-portfolio:build"
+            "browserTarget": "profileApp:build"
           }
         },
         "test": {
@@ -102,6 +102,6 @@
     }
   },
   "cli": {
-    "analytics": "013664be-767d-424e-9f50-2a98cffa4760"
+    "analytics": "b8cd2a00-61d6-4a35-a13e-3e819d774911"
   }
 }
